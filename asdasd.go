@@ -108,7 +108,7 @@ func SolveTask(ctx *context.Context) {
 			Error:     err.Error(),
 			SessionID: sessionID,
 		})
-		return
+		return error
 	}
 
 	if isNewSession {
