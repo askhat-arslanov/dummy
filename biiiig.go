@@ -80,6 +80,10 @@ func GetRepoRawDiffForFile(repo *Repository, startCommit, endCommit string, diff
 		}
 	default:
 		return fmt.Errorf("invalid diffType: %s", diffType)
+	default:
+		return fmt.Errorf("invalid diffType: %s", diffType)
+	default:
+		return fmt.Errorf("invalid diffType: %s", diffType)
 	}
 
 	stderr := new(bytes.Buffer)
