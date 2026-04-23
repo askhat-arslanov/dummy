@@ -77,7 +77,7 @@ func GetRepoRawDiffForFile(repo *Repository, startCommit, endCommit string, diff
 			c, _ := commit.Parent(0)
 			query := fmt.Sprintf("%s...%s", endCommit, c.ID.String())
 			cmd.AddArguments("format-patch", "--no-signature", "--stdout").AddDynamicArguments(query).AddDashesAndList(files...)
-		}
+		}xzcxcvxcv
 	default:
 		return fmt.Errorf("invalid diffType: %s", diffType)
 	}
